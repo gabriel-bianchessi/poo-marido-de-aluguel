@@ -14,6 +14,28 @@ const std::vector<Habilidade>& PrestadorDeServico::getHabilidades() const {
     return habilidades;
 }
 
+const Habilidade* PrestadorDeServico::buscarHabilidade(int id) const {
+    for (const auto& habilidade : habilidades) {
+        if (habilidade.getId() == id) {
+            return &habilidade;
+        }
+    }
+
+    return nullptr;
+}
+
+std::vector<const Habilidade*> PrestadorDeServico::buscarHabilidade(const std::string& nome) const {
+    std::vector<const Habilidade*> resultado;
+
+    for (const auto& habilidade : habilidades) {
+        if (habilidade.getNome() == nome) {
+            resultado.push_back(&habilidade);
+        }
+    }
+
+    return resultado;
+}
+
 const std::vector<Servico*>& PrestadorDeServico::getServicos() const {
     return servicos;
 }

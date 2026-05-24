@@ -36,9 +36,12 @@ public:
                               double valor,
                               std::unique_ptr<IMetodoPagamento> metodo);
 
-    Cliente* buscarClientePorId(int id);
-    PrestadorDeServico* buscarPrestadorPorId(int id);
-    Servico* buscarServicoPorId(int id);
+    Cliente* buscarCliente(int id);
+    std::vector<Cliente*> buscarCliente(const std::string& nome);
+    PrestadorDeServico* buscarPrestador(int id);
+    std::vector<PrestadorDeServico*> buscarPrestador(const std::string& nome);
+    Servico* buscarServico(int id);
+    std::vector<Servico*> buscarServico(const std::string& descricao);
 
     const std::vector<std::unique_ptr<Cliente>>& getClientes() const;
     const std::vector<std::unique_ptr<PrestadorDeServico>>& getPrestadores() const;

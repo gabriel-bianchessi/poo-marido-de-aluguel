@@ -46,7 +46,7 @@ Servico* SistemaContratacao::contratarServico(const std::string& descricao,
     return referencia;
 }
 
-Cliente* SistemaContratacao::buscarClientePorId(int id) {
+Cliente* SistemaContratacao::buscarCliente(int id) {
     for (const auto& cliente : clientes) {
         if (cliente != nullptr && cliente->getId() == id) {
             return cliente.get();
@@ -56,7 +56,19 @@ Cliente* SistemaContratacao::buscarClientePorId(int id) {
     return nullptr;
 }
 
-PrestadorDeServico* SistemaContratacao::buscarPrestadorPorId(int id) {
+std::vector<Cliente*> SistemaContratacao::buscarCliente(const std::string& nome) {
+    std::vector<Cliente*> resultado;
+
+    for (const auto& cliente : clientes) {
+        if (cliente != nullptr && cliente->getNome() == nome) {
+            resultado.push_back(cliente.get());
+        }
+    }
+
+    return resultado;
+}
+
+PrestadorDeServico* SistemaContratacao::buscarPrestador(int id) {
     for (const auto& prestador : prestadores) {
         if (prestador != nullptr && prestador->getId() == id) {
             return prestador.get();
@@ -66,7 +78,19 @@ PrestadorDeServico* SistemaContratacao::buscarPrestadorPorId(int id) {
     return nullptr;
 }
 
-Servico* SistemaContratacao::buscarServicoPorId(int id) {
+std::vector<PrestadorDeServico*> SistemaContratacao::buscarPrestador(const std::string& nome) {
+    std::vector<PrestadorDeServico*> resultado;
+
+    for (const auto& prestador : prestadores) {
+        if (prestador != nullptr && prestador->getNome() == nome) {
+            resultado.push_back(prestador.get());
+        }
+    }
+
+    return resultado;
+}
+
+Servico* SistemaContratacao::buscarServico(int id) {
     for (const auto& servico : servicos) {
         if (servico != nullptr && servico->getId() == id) {
             return servico.get();
@@ -74,6 +98,18 @@ Servico* SistemaContratacao::buscarServicoPorId(int id) {
     }
 
     return nullptr;
+}
+
+std::vector<Servico*> SistemaContratacao::buscarServico(const std::string& descricao) {
+    std::vector<Servico*> resultado;
+
+    for (const auto& servico : servicos) {
+        if (servico != nullptr && servico->getDescricao() == descricao) {
+            resultado.push_back(servico.get());
+        }
+    }
+
+    return resultado;
 }
 
 const std::vector<std::unique_ptr<Cliente>>& SistemaContratacao::getClientes() const {

@@ -1,0 +1,72 @@
+[
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c main.cpp",
+    "file": "main.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c AplicacaoConsole.cpp",
+    "file": "AplicacaoConsole.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c SistemaContratacao.cpp",
+    "file": "SistemaContratacao.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Servico/Servico.cpp",
+    "file": "Servico/Servico.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Servico/Data.cpp",
+    "file": "Servico/Data.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pagamento/Pagamento.cpp",
+    "file": "Pagamento/Pagamento.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pagamento/MetodoPagamento/Dinheiro.cpp",
+    "file": "Pagamento/MetodoPagamento/Dinheiro.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pagamento/MetodoPagamento/CartaoCredito.cpp",
+    "file": "Pagamento/MetodoPagamento/CartaoCredito.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pagamento/MetodoPagamento/CartaoDebito.cpp",
+    "file": "Pagamento/MetodoPagamento/CartaoDebito.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pagamento/MetodoPagamento/Pix.cpp",
+    "file": "Pagamento/MetodoPagamento/Pix.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pessoa/Pessoa.cpp",
+    "file": "Pessoa/Pessoa.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pessoa/Cliente.cpp",
+    "file": "Pessoa/Cliente.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pessoa/Prestador/PrestadorDeServico.cpp",
+    "file": "Pessoa/Prestador/PrestadorDeServico.cpp"
+  },
+  {
+    "directory": "C:/Users/gabri/projects/univali/periodo-03/poo/marido-de-aluguel",
+    "command": "g++ -std=c++17 -I. -IEnums -IPagamento -IPagamento/MetodoPagamento -IPessoa -IPessoa/Prestador -IServico -c Pessoa/Prestador/Habilidade.cpp",
+    "file": "Pessoa/Prestador/Habilidade.cpp"
+  }
+]

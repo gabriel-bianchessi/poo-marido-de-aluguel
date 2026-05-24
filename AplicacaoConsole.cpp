@@ -151,7 +151,7 @@ void AplicacaoConsole::adicionarHabilidade() {
     listarPrestadores();
 
     PrestadorDeServico* prestador =
-        sistema.buscarPrestadorPorId(lerInteiro("ID do prestador: "));
+        sistema.buscarPrestador(lerInteiro("ID do prestador: "));
 
     if (prestador == nullptr) {
         std::cout << "Prestador nao encontrado.\n";
@@ -174,7 +174,7 @@ void AplicacaoConsole::contratarServico() {
     }
 
     listarClientes();
-    Cliente* cliente = sistema.buscarClientePorId(lerInteiro("ID do cliente: "));
+    Cliente* cliente = sistema.buscarCliente(lerInteiro("ID do cliente: "));
 
     if (cliente == nullptr) {
         std::cout << "Cliente nao encontrado.\n";
@@ -183,7 +183,7 @@ void AplicacaoConsole::contratarServico() {
 
     listarPrestadores();
     PrestadorDeServico* prestador =
-        sistema.buscarPrestadorPorId(lerInteiro("ID do prestador: "));
+        sistema.buscarPrestador(lerInteiro("ID do prestador: "));
 
     if (prestador == nullptr) {
         std::cout << "Prestador nao encontrado.\n";
@@ -281,7 +281,7 @@ void AplicacaoConsole::processarPagamentoServico() {
 
     listarServicos();
 
-    Servico* servico = sistema.buscarServicoPorId(lerInteiro("ID do servico: "));
+    Servico* servico = sistema.buscarServico(lerInteiro("ID do servico: "));
 
     if (servico == nullptr) {
         std::cout << "Servico nao encontrado.\n";
@@ -309,7 +309,7 @@ void AplicacaoConsole::alterarStatusServico() {
 
     listarServicos();
 
-    Servico* servico = sistema.buscarServicoPorId(lerInteiro("ID do servico: "));
+    Servico* servico = sistema.buscarServico(lerInteiro("ID do servico: "));
 
     if (servico == nullptr) {
         std::cout << "Servico nao encontrado.\n";

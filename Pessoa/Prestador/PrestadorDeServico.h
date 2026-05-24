@@ -19,6 +19,8 @@ public:
     void adicionarServico(Servico& servico);
 
     const std::vector<Habilidade>& getHabilidades() const;
+    const Habilidade* buscarHabilidade(int id) const;
+    std::vector<const Habilidade*> buscarHabilidade(const std::string& nome) const;
     const std::vector<Servico*>& getServicos() const;
     bool estaDisponivelEm(const Data& data) const;
 };

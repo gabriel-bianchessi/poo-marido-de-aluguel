@@ -1,0 +1,11 @@
+CompileFlags:
+  Add:
+    - --target=x86_64-w64-mingw32
+    - -nostdinc
+    - -IC:/msys64/ucrt64/include/c++/14.2.0
+    - -IC:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32
+    - -IC:/msys64/ucrt64/include/c++/14.2.0/backward
+    - -IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include
+    - -IC:/msys64/ucrt64/include
+  Remove:
+    - --resource-dir=*
